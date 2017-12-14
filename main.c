@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include "heap2.h"
+#include "heap.h"
 
 void* AllocIntH(void* x)
 {
@@ -17,7 +17,7 @@ void DeleteIntH (void* x)
 
 int main() {
 
-    const N = 10;
+    const int N = 10;
 
     int i;
     int* ArrK= malloc(sizeof(int)*N);

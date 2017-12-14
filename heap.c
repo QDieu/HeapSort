@@ -1,4 +1,4 @@
-#include "heap2.h"
+#include "heap.h"
 #include <stdio.h>
 #include <stdlib.h>
 #define MAXN 100
