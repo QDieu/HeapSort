@@ -32,6 +32,7 @@ int main() {
     for (i=0;i<N; i++) printf("%d %d\n", ArrK[i], *(int*)ArrV[i]);
     BHeap * Ases = BHeap_new (MoreKey,DeleteIntH,AllocIntH);
     AddElementFromArr(Ases,ArrK, ArrV, N);
+    for (i=0; i<N; i++) Ases->Delete(ArrV[i]);	
     SortDownP(Ases,0);
     ChangeKey(Ases,3, 10);
     MaxElementToArr(Ases,ArrK,ArrV,N);
